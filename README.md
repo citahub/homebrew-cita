@@ -1,6 +1,8 @@
 homebrew-cita
 =============
 
+More details at [CITAHub Docs][1].
+
 ## Installation
 ```
 brew tap cryptape/cita
@@ -27,7 +29,7 @@ Click docker icon and share `/usr/local/Cellar/cita`.
 ### Create Chain
 
 ```
-$ cita create --chain_name "cita_block_chain" --super_admin "0x4b5ae4567ad5d9fb92bc9afd6a657e6fa13a2523" --nodes "127.0.0.1:4000,127.0.0.1:4001,127.0.0.1:4002,127.0.0.1:4003"
+$ cita create --chain_name "test-chain" --super_admin "0x4b5ae4567ad5d9fb92bc9afd6a657e6fa13a2523" --nodes "127.0.0.1:4000,127.0.0.1:4001,127.0.0.1:4002,127.0.0.1:4003"
 ```
 
 ### Setup Chain
@@ -64,7 +66,7 @@ _Here are some default sets, you can reset them on your own:_
 
 ```
 $ cita port 42:42
-# The docker port is `1337:1337` by default, if you need to, use this._
+# The docker port is `1337:1337` by default, if you need to, use this.
 ```
 
 ## Contributing
@@ -77,4 +79,4 @@ Please check [cryptape/cita][1] for more details.
 
 [Apache](/LICENSE)
 
-[1]: https://github.com/cryptape/cita
+[1]: https://docs.citahub.com/en-US/welcome
