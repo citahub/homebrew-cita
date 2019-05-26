@@ -11,7 +11,7 @@ brew tap cryptape/cita
 By default, binaries installed by cita will be placed into:
 
 ```
-/usr/local/Cellar/cita/0.22.0
+/usr/local/Cellar/cita/0.24.0
 ```
 
 Run `cita help` for more detailed information.
@@ -21,7 +21,7 @@ Run `cita help` for more detailed information.
 brew cask install docker
 ```
 
-Click docker icon and share `/usr/local/Cellar/cita`.
+__Note__: Please click docker icon and share `/usr/local/Cellar/cita`.
 
 
 ### Install cita
@@ -36,18 +36,24 @@ It will install **cita_secp256k1_sha3** by default.
 ### Create Chain
 
 ```shell
-$ cita create --chain_name "test-chain" --super_admin "0x4b5ae4567ad5d9fb92bc9afd6a657e6fa13a2523" --nodes "127.0.0.1:4000"
+$ bin/cita create --super_admin "0x141d051b1b1922bf686f5df8aad45cefbcb0b696" --nodes "127.0.0.1:4000,127.0.0.1:4001,127.0.0.1:4002,127.0.0.1:4003"
 ```
 
 ### Setup Chain
 
 ```shell
 $ cita setup test-chain/0
+$ cita setup test-chain/1
+$ cita setup test-chain/2
+$ cita setup test-chain/3
 ```
 
 ### Start Chain
 ```shell
 $ cita start test-chain/0
+$ cita start test-chain/1
+$ cita start test-chain/2
+$ cita start test-chain/3
 ```
 
 ### Test chain available
