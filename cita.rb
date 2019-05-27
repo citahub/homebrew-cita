@@ -3,14 +3,12 @@ class Cita < Formula
   desc "A high performance blockchain for enterprise users."
   homepage "https://github.com/cryptape/cita"
 
-  version "0.22.0"
-  url "https://github.com/cryptape/cita/releases/download/v0.22.0/cita_secp256k1_sha3.tar.gz"
-  sha256 "3f28abc41f98b4e2dc5122ad72d8032a1fb09751d148ab6483e9c2e50af7800d"
+  version "0.24.0"
+  url "https://github.com/cryptape/cita/releases/download/v0.24.0/cita_secp256k1_sha3.tar.gz"
+  sha256 "05dd4cea809e2f10c85b1a798e636d595968d4bea4e969a7be15cf89542352c2"
   resource "cita" do
     url "https://github.com/cryptape/cita.git",
-        :branch => "develop"
-    # Completing at v0.23
-    # :tag => ""
+        :tag => "v0.24.0"
     # :revision => ""
   end
 
